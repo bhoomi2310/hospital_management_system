@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-card">
+    <h2><i class="fas fa-file-invoice-dollar"></i> Add Billing Details</h2>
+    <form action="/billing" method="post">
+        <input type="text" name="patient_name" placeholder="Patient Name" required>
+        <input type="text" name="status" placeholder="Treatment Provided" required>
+        <input type="number" name="amount" placeholder="Amount (in ₹)" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+</div>
+{% endblock %}
+

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-card">
+    <h2><i class="fas fa-calendar-plus"></i> Book Appointment</h2>
+    <form action="/appointments" method="post">
+        <input type="text" name="patient_name" placeholder="Patient Name" required>
+        <input type="text" name="doctor" placeholder="Doctor Name" required>
+        <input type="datetime-local" name="date" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+</div>
+{% endblock %}

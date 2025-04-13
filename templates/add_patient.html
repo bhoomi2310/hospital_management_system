@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-card">
+    <h2><i class="fas fa-user-plus"></i> Add New Patient</h2>
+    <form action="/add_patient" method="post">
+        <input type="text" name="name" placeholder="Patient Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="text" name="gender" placeholder="Gender" required>
+        <input type="text" name="disease" placeholder="Disease" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

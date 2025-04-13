@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-section">
+    <div class="overlay">
+        <h1 class="main-heading">Welcome to <span class="brand">Medora</span></h1>
+        <p class="subheading">Your trusted partner in health and healing.</p>
+
+        <div class="button-grid">
+            <!-- Add buttons -->
+            <a href="/add_patient" class="card-button">
+                <i class="fas fa-user-plus"></i>
+                Add Patient
+            </a>
+            <a href="/appointments" class="card-button">
+                <i class="fas fa-calendar-plus"></i>
+                Book Appointment
+            </a>
+            <a href="/billing" class="card-button">
+                <i class="fas fa-file-invoice-dollar"></i>
+                Add Bill
+            </a>
+
+            <!-- View buttons -->
+            <a href="/view_patients" class="card-button">
+                <i class="fas fa-users"></i>
+                View Patients
+            </a>
+            <a href="/view_appointments" class="card-button">
+                <i class="fas fa-calendar-alt"></i>
+                View Appointments
+            </a>
+            <a href="/view_bills" class="card-button">
+                <i class="fas fa-receipt"></i>
+                View Bills
+            </a>
+        </div>
+
+        <!-- Emergency Contact Card -->
+        <div class="emergency-card">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+                <h3>Emergency Line</h3>
+                <p>📞 1800-900-100</p>
+            </div>
+        </div>
+
+        <!-- About & Timings -->
+        <div class="info-sections">
+            <div class="about-box">
+                <h2>About Us</h2>
+                <p>Medora Hospital specializes in cardiology, neurology, orthopedics, pediatrics, and emergency medicine. Our team of highly qualified doctors and compassionate staff ensures top-quality healthcare for every patient.</p>
+            </div>
+            <div class="timing-box">
+                <h2>Timings</h2>
+                <p>🕘 Monday – Saturday: 9:00 AM to 9:00 PM<br>
+                🕐 Sunday: 10:00 AM to 4:00 PM</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

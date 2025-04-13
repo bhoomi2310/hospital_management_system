@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+}
+
+.hero-section {
+    background: url('/static/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 51, 102, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.main-heading {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.brand {
+    color: #00d4ff;
+}
+
+.subheading {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.card-button {
+    background-color: #ffffff;
+    color: #003366;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-button i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #00bfff;
+}
+
+.card-button:hover {
+    transform: translateY(-8px);
+    background-color: #e6f7ff;
+}
+
+.emergency-card {
+    background-color: #ff4d4d;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.emergency-card i {
+    font-size: 30px;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-box, .timing-box {
+    background-color: #fff;
+    color: #003366;
+    border-radius: 15px;
+    padding: 25px;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.about-box h2, .timing-box h2 {
+    color: #007acc;
+}
+
+.form-card {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form-card h2 {
+    margin-bottom: 25px;
+    color: #003366;
+}
+
+.form-card input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-card button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-card button:hover {
+    background-color: #005f99;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #007acc;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
